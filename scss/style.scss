@@ -1,0 +1,97 @@
+
+// // define the appearance of the steps
+
+
+// #sidebar {
+//   display: flex;
+//   flex-direction: column;
+//   width: 200px;
+
+//   div {
+//     &.current {
+//       @include step-style(#0080ff, #fff);
+//     }
+
+//     &:not(.current) {
+//       @include step-style(#ddd, #333);
+//     }
+//   }
+// }
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
+
+// Primary color
+$color_Marine-blue: hsl(213, 96%, 18%);
+$color_Purplish-blue: hsl(243, 100%, 62%);
+$color_Pastel-blue: hsl(228, 100%, 84%);
+$color_Light-blue: hsl(206, 94%, 87%);
+$color_Strawberry-red: hsl(354, 84%, 57%);
+
+// Neutral color
+$color_Cool-gray: hsl(231, 11%, 63%);
+$color_Light-gray: hsl(229, 24%, 87%);
+$color_Magnolia: hsl(217, 100%, 97%);
+$color_Alabaster: hsl(231, 100%, 99%);
+$color_White: hsl(0, 0%, 100%);
+
+$font-size:16px;
+$font-family:'Ubuntu:ital';
+
+@mixin step-style($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+}
+body{
+  margin: 0;
+  // padding: 50px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: $font-family;
+  font-size: $font-size;
+  height: 100vh;
+  
+
+  .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid red;
+  margin:20px  auto 0;
+  height: 90%;
+  max-height: 100vh;
+  
+   aside{
+    border: 1px solid blue;
+    width: 20%;
+    height: 90vh;
+
+    max-height: 100vh;
+    background-image:url(../assets/images/bg-sidebar-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position-x: center;
+    border-radius: 10px;
+    padding: 20px;
+    color: $color_White;
+
+    
+   }
+   main{
+    border: 1px solid rgb(89, 255, 0);
+    height: 90vh;
+    max-height: 100vh;
+   }
+
+
+
+
+
+
+  }
+
+
+}

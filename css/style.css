@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
+body {
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Ubuntu:ital";
+  font-size: 16px;
+  height: 100vh;
+}
+body .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid red;
+  margin: 20px auto 0;
+  height: 90%;
+  max-height: 100vh;
+}
+body .container aside {
+  border: 1px solid blue;
+  width: 20%;
+  height: 90vh;
+  max-height: 100vh;
+  background-image: url(../assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  border-radius: 10px;
+  padding: 20px;
+  color: hsl(0deg, 0%, 100%);
+}
+body .container main {
+  border: 1px solid rgb(89, 255, 0);
+  height: 90vh;
+  max-height: 100vh;
+}
+
+/*# sourceMappingURL=style.css.map */
