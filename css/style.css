@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap");
+:root {
+  --color_Marine-blue: hsl(213, 96%, 18%);
+  --color_Purplish-blue: hsl(243, 100%, 62%);
+  --color_Pastel-blue: hsl(228, 100%, 84%);
+  --color_Light-blue: hsl(206, 94%, 87%);
+  --color_Strawberry-red: hsl(354, 84%, 57%);
+  --color_Cool-gray: hsl(231, 11%, 63%);
+  --color_Light-gray: hsl(229, 24%, 87%);
+  --color_Magnolia: hsl(217, 100%, 97%);
+  --color_Alabaster: hsl(231, 100%, 99%);
+  --color_White: hsl(0, 0%, 100%);
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -9,7 +22,7 @@ body {
 }
 body .container {
   display: flex;
-  justify-content: space-between;
+  gap: 130px;
   align-items: center;
   padding: 20px;
   border: 1px solid red;
@@ -24,16 +37,71 @@ body .container aside {
   max-height: 100vh;
   background-image: url(../assets/images/bg-sidebar-desktop.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position-x: center;
   border-radius: 10px;
   padding: 20px;
-  color: hsl(0deg, 0%, 100%);
+  color: var(--color_White);
+  text-transform: uppercase;
+}
+body .container aside .number-field {
+  display: flex;
+  gap: 25px;
+  margin: 15px auto;
+  height: 75px;
+}
+body .container aside .number-field:hover .number {
+  background-color: var(--color_Light-blue);
+  color: var(--color_Marine-blue);
+}
+body .container aside .number-field .number {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+  font-size: 22px;
+}
+body .container aside .number-field div div:first-child {
+  padding-top: 10px;
+  font-size: 12px;
+  color: var(--color_Cool-gray);
+  margin-bottom: 5px;
+}
+body .container aside .number-field div div:nth-child(2) {
+  font-weight: bold;
 }
 body .container main {
   border: 1px solid rgb(89, 255, 0);
+}
+body .container main .step {
   height: 90vh;
-  max-height: 100vh;
+  width: 65vw;
+}
+body .container main #step-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+body .container main #step-1 h2:first-child {
+  font-size: 40px;
+  color: var(--color_Marine-blue);
+  font-weight: 700;
+  margin-top: 10px;
+}
+body .container main #step-1 p {
+  font-size: 18px;
+  margin-top: -40px;
+  color: var(--color_Cool-gray);
+  word-spacing: 0.3em;
+}
+body .container main #step-1 label {
+  color: var(--color_Marine-blue);
+  font-size: 20px;
+}
+body .container main #step-1 input {
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
