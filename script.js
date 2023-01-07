@@ -16,7 +16,8 @@ document.querySelectorAll('[id^=next-step]').forEach(button => {
     if (nextStep) {
       currentStep.classList.remove('current');
       nextStep.classList.add('current');
-      nextStep.style.display = 'block';
+      nextStep.style.display = 'flex';
+      nextStep.style.backgroundColor = 'hsl(206, 94%, 87%)';
     }
   });
 });
@@ -32,7 +33,7 @@ document.querySelectorAll('[id^=go-back]').forEach(button => {
     if (previousStep) {
       currentStep.classList.remove('current');
       previousStep.classList.add('current');
-      previousStep.style.display = 'block';
+      previousStep.style.display = 'flex';
     }
   });
 });

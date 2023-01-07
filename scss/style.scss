@@ -45,6 +45,10 @@ $font-family:'Ubuntu:ital';
   padding: 10px;
   border-radius: 5px;
 }
+.current{
+  background-color: var(--color_Light-blue);
+  color: var(--color_Marine-blue);
+}
 body{
   margin: 0;
   // padding: 50px;
@@ -88,7 +92,7 @@ body{
       height: 75px;
        
       &:hover{
-        .number{
+        .number,.current{
           background-color: var(--color_Light-blue);
           color: var(--color_Marine-blue);
         }
@@ -100,7 +104,7 @@ body{
       height: 50px;
       display: grid;
       place-items: center;
-      background-color:transparent;
+      // background-color:transparent;
       font-size: 22px;
 
       
@@ -121,11 +125,11 @@ body{
 
    main{
     border: 1px solid rgb(89, 255, 0);
-    // height: 90vh;
-    // max-height: 100vh;
+    width: 700px;
+    position: relative;
     .step{
      height: 90vh;
-    width: 65vw; 
+    // width: 65vw; 
     }
   #step-1{
     display: grid;
@@ -150,11 +154,29 @@ body{
       font-size: 20px;
     }
     input{
-    border-radius: 5px;
+      border-radius: 10px;
+      border: 1px solid var(--color_Pastel-blue);
+      margin-top: -10px;
+      margin-bottom: 67px;
+      // width: 70%;
+      font-size: 22px;
+      color: var(--color_Marine-blue);
+      font-weight: 600;
+
+      &:hover{
+        border: 1px solid var(--color_Purplish-blue);
+      }
     }
 
     button{
-
+      background-color: var(--color_Marine-blue);
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      color: var(--color_Alabaster);
+      position: absolute;
+      right: 0;
+      bottom: 0;
     }
 
   } 
