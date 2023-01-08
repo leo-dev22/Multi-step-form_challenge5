@@ -11,8 +11,8 @@
    <!-- Sidebar start -->
    <aside>
 	
-   <div class="current-step number-field "  id="step-1">
-    <div class="number current ">1</div>
+   <div class="number-field "  id="step-1">
+    <div class="number">1</div>
 		<div>
 		<div>Step 1</div>
     <div>Your info</div>
@@ -20,21 +20,21 @@
 	 </div>
 
     <div id="step-2" class="number-field">
-			<div class="number">
-       2</div>
-		<div>
-    <div>Step 2</div>
-    <div>Select plan</div>
+      <div class="number"> 2</div>
+        <div>
+          <div>Step 2</div>
+          <div>Select plan</div>
+        </div>
     </div>
-		</div>
     
     <div id="step-3" class="number-field">
       <div class="number">3</div>
-    <div>
-    <div>Step 3</div>
-    <div>Add-ons</div>
-    </div>
-    </div>
+        <div>
+          <div>Step 3</div>
+          <div>Add-ons</div>
+        </div>
+
+      </div>
 
     <div id="step-4" class="number-field">
       <div class="number">4</div>
@@ -58,12 +58,12 @@
     <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" required>
     <label for="phone">Phone Number</label>
     <input type="tel" id="phone" placeholder="e.g. +1 234 567 890" required>
-    <button type="button" id="next-step-1">Next Step</button>
+    <button type="submit" id="next-step-1">Next Step</button>
    </div>
    <!-- Step 1 end -->
 
    <!-- Step 2 start -->
-   <div class="step" id="plan" >
+   <div class="step" id="step-2" >
     <h2>Select your plan</h2>
     <p>You have the option of monthly or yearly billing.</p>
     <div>
@@ -89,11 +89,12 @@
       <input type="radio" name="billing" id="yearly" value="yearly" required>
       <label for="yearly">Yearly</label>
     </div>
-    <button type="button">Go Back</button>
+    <button type="button" id="go-back-1">Go Back</button>
     <button type="submit" id="next-step-2">Next Step</button>
    </div>
+
    <!-- Step 3 start -->
-   <div class="step" id="subscription">
+   <div class="step" id="step-3">
     <h2>Pick add-ons</h2>
     <p>Add-ons help enhance your gaming experience.</p>
     <div>
@@ -114,24 +115,24 @@
       <span>Custom theme on your profile</span>
       <span>+$2/mo</span>
     </div>
-    <button type="button">Go Back</button>
+    <button type="button" id="go-back-2">Go Back</button>
     <button type="submit" id="next-step-3">Next Step</button>
    </div>
    <!-- Step 3 end -->
 
    <!-- Step 4 start -->
-   <div  class="step" id="review-subscription">
+   <div  class="step" id="step-4">
     <h2>Finishing up</h2>
     <p>Double-check everything looks OK before confirming.</p>
     <!-- Dynamically add subscription and add-on selections here -->
     <div>Total (per month/year)</div>
-    <button type="button">Go Back</button>
-    <button type="button" id="next-step-4">Confirm</button>
+    <button type="button" id="go-back-3">Go Back</button>
+    <button type="submit" id="next-step-4">Confirm</button>
    </div>
    <!-- Step 4 end -->
 
    <!-- Step 5 start -->
-   <div class="step" id="confirmation">
+   <div class="step" id="step-5">
     <h2>Thank you!</h2>
     <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
    </div>
@@ -141,7 +142,7 @@
 	 </main>
   </div>
 	<!-- <footer></footer> -->
-	<script src="./script.js"></script>
+	<script src="./script3.js"></script>
 </body>
 </html>
 

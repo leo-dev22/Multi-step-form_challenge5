@@ -12,15 +12,20 @@
   --color_White: hsl(0, 0%, 100%);
 }
 
-.current {
+.hidden {
+  display: none;
   background-color: var(--color_Light-blue);
   color: var(--color_Marine-blue);
 }
 
-body {
+*, *::before, *::after {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+body {
   font-family: "Ubuntu:ital";
   font-size: 16px;
   height: 100vh;
@@ -80,6 +85,7 @@ body .container aside .number-field div div:nth-child(2) {
 body .container main {
   border: 1px solid rgb(89, 255, 0);
   width: 700px;
+  height: inherit;
   position: relative;
 }
 body .container main .step {

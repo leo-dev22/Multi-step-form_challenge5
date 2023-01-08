@@ -45,15 +45,18 @@ $font-family:'Ubuntu:ital';
   padding: 10px;
   border-radius: 5px;
 }
-.current{
+.hidden{
+  display: none;
   background-color: var(--color_Light-blue);
   color: var(--color_Marine-blue);
 }
-body{
-  margin: 0;
-  // padding: 50px;
+*,*::before,*::after{
+  margin: 0;padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+body{
+  // padding: 50px;
   font-family: $font-family;
   font-size: $font-size;
   height: 100vh;
@@ -126,10 +129,12 @@ body{
    main{
     border: 1px solid rgb(89, 255, 0);
     width: 700px;
+    height: inherit;
     position: relative;
     .step{
      height: 90vh;
     // width: 65vw; 
+    // height: inherit;
     }
   #step-1{
     display: grid;
